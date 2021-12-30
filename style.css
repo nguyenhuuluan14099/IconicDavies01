@@ -1,0 +1,228 @@
+.card-img-top{
+    height: 120px;
+}
+.big{
+    background: url("https://wallpaperaccess.com/full/3627094.jpg");
+    background-size: cover;
+}
+.card{
+    position: relative;
+    width:320px;
+    height:250px;
+    margin-top: 10px;
+    
+}
+.big{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    position: relative;
+}
+.top{
+    width:320px;
+    height:330px;
+    position: absolute;
+}
+.small{
+    position: absolute;
+    width:320px;
+    height:260px;
+    z-index: 11;
+    opacity: 1;
+    visibility: visible;
+
+}
+.small.active{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.backbtn{
+    position: absolute;
+    bottom: 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index: 16;
+    opacity: 0;
+    visibility: hidden;
+    width:320px;
+    height:50px;
+}
+.btnBack{
+    border-radius:20px;
+    background:#2482EA;
+    color:white;
+    width: 80px;
+    height: 40px;
+}
+.backbtn.hidden{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.myCoin{
+    position: absolute;
+    z-index: 10;
+    background:white;
+    width:320px;
+    height:20px;
+    border-radius: 15px 15px 0px 0px;
+    padding-left: 20px;
+    font-weight:bold;
+    margin-bottom: 10px;
+ 
+}
+.iconCoin{
+    border: 1px solid #C28E00;
+    border-radius: 50%;
+    background:#C28E00;
+    color:#E5CB71;
+    font-size: 15px;
+    margin-right: 5px;
+  
+}
+.iconG{
+    margin-right: 5px;
+}
+.gold{
+    margin-right: 80px;
+    margin-left: 50px;
+    
+
+}
+.iconG{
+    color: #ffff;
+    background:#2482EA;
+    border-radius: 50%;
+    font-size:17px;
+}
+.border-radius{
+    border-radius: 30px;
+    
+}
+.bgBottom{
+    position:absolute;
+    bottom:-8px;
+    background:white;
+    width:320px;
+    height:20px;
+    z-index: 9;
+    border-radius:0px 0px 15px 15px;
+}
+.card-title{
+    font-size: 16px;
+    font-weight:bold;
+}
+.card-text{
+    font-size:12px;
+    text-transform: lowercase;
+}
+.btnSearch{
+    bottom:0;
+    position: absolute;
+    font-size: 26px;
+    color: #0065DD;
+    font-weight:bold;
+    cursor: pointer;
+    transition:0.2s;
+}
+.btnSearch:hover{
+    font-weight: 100;
+    color: red;
+    transition:0.2s;
+}
+.btnCoin{
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    border-radius:20px;
+    border: 1px solid #B0C2D4;
+    height:33px;
+    width: 75px;
+    text-align: center;
+    padding-top:5px;
+    font-weight: bold;
+    font-size:15px;
+    font-family: arial,sans-serif;
+    background:#B0C2D4;
+    transition:0.2s;
+    
+}
+.btnCoin:hover{
+    text-decoration:none;
+    transition:0.2s;
+}
+.btnCoin .iconify{
+    border: 1px solid #C28E00;
+    border-radius: 50%;
+    background:#C28E00;
+    color:#E5CB71;
+    font-size: 15px;
+    width:15px;
+    height:15px;
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+    margin-right: 2px;
+    
+}
+/* css cho video */
+#myVideo{
+  position: fixed;
+  z-index: 12;
+  min-width: 100%; 
+  min-height: 100%;
+  opacity: 0;
+  visibility:hidden;
+
+}
+
+#myVideo.run{
+    visibility: visible;
+    opacity: 1;
+}
+.bgVideo{
+    position: relative;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.imgIconic{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 44%;
+    left: 40%;
+    z-index: 15;
+    opacity: 0;
+    visibility: hidden;
+}
+@media only screen and (min-width: 768px){
+    .imgIconic{
+        width: 200px;
+        height:100px;
+        position: absolute;
+        top: 38%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .imgIconic{
+        width: 300px;
+        height:200px;
+        position: absolute;
+        top: 40%;
+    }
+}
+.imgIconic.active{
+    opacity: 1;
+    visibility: visible;
+    animation:ani1 0.5s linear;
+}
+@keyframes ani1{
+    0%{ transform: scale(0) ;
+    }
+    100%{ transform:scale(1) ;
+        
+    }
+   
+}
