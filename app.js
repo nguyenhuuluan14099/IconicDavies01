@@ -59,6 +59,7 @@ btnCoin.onclick = function() {
 btnBack.onclick = function() {
     imgIconic.setAttribute("src","./video&images/iconic.jpg");
     videoCard.setAttribute("src","./video&images/iconic.mp4");
+    videoCard.pause();
     btnBack.classList.remove("hidden");
     videoCard.classList.remove("run");
     smallCard.classList.remove("active");
